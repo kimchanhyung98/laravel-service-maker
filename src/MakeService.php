@@ -11,21 +11,21 @@ class MakeService extends GeneratorCommand
      *
      * @var string
      */
-    protected string $type = 'Service';
+    protected $type = 'Service';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected string $signature = 'make:service {name}';
+    protected $signature = 'make:service {name}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected string $description = 'Create a new service class';
+    protected $description = 'Create a new service class';
 
     /**
      * Get the stub file for the generator.
@@ -34,7 +34,7 @@ class MakeService extends GeneratorCommand
      */
     protected function getStub(): string
     {
-        return __DIR__ . './service.stub';
+        return __DIR__ . '/service.stub';
     }
 
     /**
@@ -43,7 +43,7 @@ class MakeService extends GeneratorCommand
      * @param string $rootNamespace
      * @return string
      */
-    protected function getDefaultNamespace(string $rootNamespace): string
+    protected function getDefaultNamespace($rootNamespace): string
     {
         return $rootNamespace . '\Services';
     }

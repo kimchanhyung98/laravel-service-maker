@@ -12,5 +12,7 @@ class {{ class }}
     public function index()
     {
         //
+
+        return;
     }
 }

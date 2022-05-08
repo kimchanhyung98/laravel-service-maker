@@ -1,0 +1,32 @@
+{
+  "authors": [
+    {
+      "name": "kimchanhyung98",
+      "email": "kimchanhyung98@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Kimchanhyung98\\ServiceMaker\\": "src/"
+    }
+  },
+  "description": "description",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kimchanhyung98\\ServiceMaker\\ServiceMakerServiceProvider"
+      ]
+    }
+  },
+  "homepage": "https://github.com/kimchanhyung98",
+  "keywords": [
+    "php",
+    "artisan",
+    "laravel",
+    "service",
+    "services"
+  ],
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "name": "kimchanhyung98/laravel-service-maker"
+}

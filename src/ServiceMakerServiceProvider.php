@@ -14,10 +14,6 @@ class ServiceMakerServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
-//            $this->publishes([
-//                __DIR__ . './config/service-maker.php' => config_path('service-maker.php'),
-//            ], 'config');
-
             $this->commands([
                 MakeService::class,
             ]);
